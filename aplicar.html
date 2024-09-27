@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Bolsa de trabajo ESEN</title>
+	<link href="css/estilo.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+	<div class="envoltorio">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo2.png" title="logo" height="42px" /></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="ofertas.html">Ofertas</a></li>
+				<li><a href="consejos.html">Consejos</a></li>
+				<li class="activo"><a href="aplicar.html">Aplicar</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<section>
+	<article class="ofertas">
+		<div class="envoltorio">
+			<h2>Formulario de Aplicación</h2>
+			<form action="aplicar.php" method="post">
+				<label for="nombre">Nombre:</label><br>
+				<input type="text" id="nombre" name="nombre" required><br><br>
+
+				<label for="apellidos">Apellidos:</label><br>
+				<input type="text" id="apellidos" name="apellidos" required><br><br>
+
+				<label for="carnet">Carnet:</label><br>
+				<input type="text" id="carnet" name="carnet" required><br><br>
+
+				<label for="departamento">Departamento de residencia:</label><br>
+				<select id="departamento" name="departamento" required>
+					<option value="">-- Seleccione un departamento --</option>
+					<option value="San Salvador">San Salvador</option>
+					<option value="La Libertad">La Libertad</option>
+					<option value="Santa Ana">Santa Ana</option>
+					<option value="Sonsonate">Sonsonate</option>
+					<option value="Chalatenango">Chalatenango</option>
+					<option value="Cuscatlán">Cuscatlán</option>
+					<option value="Cabañas">Cabañas</option>
+					<option value="La Paz">La Paz</option>
+					<option value="San Vicente">San Vicente</option>
+					<option value="Usulután">Usulután</option>
+					<option value="Morazán">Morazán</option>
+					<option value="San Miguel">San Miguel</option>
+				</select><br><br>
+
+				<label for="edad">Edad:</label><br>
+				<input type="number" id="edad" name="edad" required><br><br>
+
+				<label for="genero">Género:</label><br>
+				<input type="radio" id="masculino" name="genero" value="masculino" required>
+				<label for="masculino">Masculino</label>
+				<input type="radio" id="femenino" name="genero" value="femenino" required>
+				<label for="femenino">Femenino</label><br><br>
+
+				<label for="fechaNacimiento">Fecha de nacimiento:</label><br>
+				<input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
+
+				<label for="telefono">Número de teléfono:</label><br>
+				<input type="tel" id="telefono" name="telefono" required><br ><br>
+
+				<label for="carrera">Carrera:</label><br>
+				<select id="carrera" name="carrera" required>
+					<option value="">-- Seleccione una carrera --</option>
+					<option value="software">Ingeniería de Software y Negocios Digitales</option>
+					<option value="negocios">Ingeniería de Negocios</option>
+					<option value="economia">Licenciatura en Economía y Negocios</option>
+					<option value="juridicas">Licenciatura en Ciencias Jurídicas</option>
+				</select><br><br>
+
+				<label for="pretension">Pretensión salarial:</label><br>
+				<input type="number" id="pretension" name="pretension" required><br><br>
+
+				<input type="submit" value="Enviar">
+			</form>
+		</div>
+	</article>
+
+</section>
+<footer>
+	<p>Creado por: Marcelo Adrián Guerra Najarro-20235917</p>
+</footer>
+</body>
+</html>
